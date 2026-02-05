@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exchange Rates Extension</title>
+</head>
+
+<body>
+    <h1>Exchange Rates</h1>
+    <img src="icon.webp" alt="Logo" width="45" height="45" />
+    <p>Convert your currency </p>
+
+
+    <input type="number" id="amount" placeholder="Enter amount" />
+
+    <select id="Currency">
+        <option value="USD">USD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="JPY">JPY</option>
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="CHF">CHF</option>
+        <option value="CNY">CNY</option>
+        <option value="INR">INR</option>
+        <option value="BRL">BRL</option>
+        <option value="ZAR">ZAR</option>
+        <option value="RUB">RUB</option>
+        <option value="KRW">KRW</option>
+        <option value="SGD">SGD</option>
+        <option value="MXN">MXN</option>
+        <option value="NZD">NZD</option>
+        <option value="SEK">SEK</option>
+        <option value="NOK">NOK</option>
+        <option value="DKK">DKK</option>
+        <option value="PLN">PLN</option>
+        <option value="TRY">TRY</option>
+        <option value="HKD">HKD</option>
+        <option value="MYR">MYR</option>
+        <option value="THB">THB</option>
+        <option value="IDR">IDR</option>
+        <option value="CZK">CZK</option>
+        <option value="HUF">HUF</option>
+        <option value="ILS">ILS</option>
+        <option value="CLP">CLP</option>
+        <option value="PHP">PHP</option>
+        <option value="AED">AED</option>
+        <option value="COP">COP</option>
+        <option value="SAR">SAR</option>
+        <option value="RON">RON</option>
+        <option value="PEN">PEN</option>
+        <option value="ARS">ARS</option>
+        <option value="VND">VND</option>
+    </select>
+
+    <button id="convert">Convert currency</button>
+
+    <div id="result"></div>
+
+
+    <script src="exchange.js"></script>
+    
+    <style> 
+        * {
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+.container {
+    background: #ffffff;
+    padding: 30px 35px;
+    border-radius: 14px;
+    width: 340px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input,
+select,
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input,
+select {
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: #1d2671;
+}
+
+button {
+    background: #1d2671;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #16205c;
+}
+
+#result {
+    margin-top: 18px;
+    font-size: 17px;
+    color: #222;
+    min-height: 22px;
+}
+
+.loading {
+    color: #777;
+}
+
+.error {
+    color: #d63031;
+}
+
+    </style>
+</body>
+</html>
